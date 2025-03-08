@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class RegisterTeam extends RegisterTenant
 {
+
     public function form(Form $form): Form
     {
         return $form

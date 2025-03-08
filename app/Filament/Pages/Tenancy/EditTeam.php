@@ -199,6 +199,8 @@ class EditTeam extends EditTenantProfile
                 email: $data['email']
             );
 
+            $this->inviteForm->fill();
+
             Notification::make()
                 ->title('Convite enviado')
                 ->body(sprintf('O convite foi enviado para o email %s.', $data['email']))
