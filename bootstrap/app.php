@@ -18,6 +18,6 @@ return Application::configure(basePath: dirname(__DIR__))
         //
     })
     ->withSchedule(function (Schedule $schedule) {
-        $schedule->command('satis:build')->daily();
+        $schedule->command('satis:build')->everyThirtyMinutes();
     })
     ->create();
